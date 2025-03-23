@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>typing master</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="display">
+        <div class="setting"></div>
+        <div class="texting">
+            <div class="text-ex">
+                <p class="pera" >
+                </p>
+               
+            </div>
+            <div class="stop">
+                <div class="time">
+                    <span class="timespan">
+                        time: <p class="timep"> 0 sec</p>
+                    </span>
+                    <span class="WPMspan">
+                        WPM:
+                        time <p class="WPMP"> 0</p>
+                    </span>
+                    <span class="Accuracyspan">
+                        Accuracy: <p class="acc"> 0 </p>
+                    </span>
+                </div>
+                <button class="startstop" >start</button>
+            </div>
+        </div>
+        <div class="empty"></div>
+        <div class="complete">
+         <div class="wrapper">
+          <div class="top">
+            <img src="./assets/firework.png" alt="Congratulations">
+            <h1>Congratulations</h1>
+           </div>
+           <div class="result">
+            <ul>
+              <li>Typing Complete!</li>
+              <li id="t" >Time :</li>
+              <li id="w" >WPM :</li>
+              <li id="a" >Accuracy :</li>
+            </ul>
+            <button id="close" >close</button>
+           </div>
+         </div>
+        </div>
+      </div>
+      <div class="keyboard">
+        <div class="keyboard-container">
+          <div class="keycol keycol1">
+            <div class="keybutton Backquote">
+              <p id="Backquote">~</p>
+              <p id="bs">`</p>
+            </div>
+            <div class="keybutton Digit1">
+              <p id="cm">!</p>
+              <p id="one">1</p>
+            </div>
+            <div class="keybutton Digit2">
+              <p id="at">@</p>
+              <p id="two">2</p>
+            </div>
+            <div class="keybutton Digit3">
+              <p id="hash">#</p>
+              <p id="tree">3</p>
+            </div>
+            <div class="keybutton Digit4">
+              <p id="doller">$</p>
+              <p id="for">4</p>
+            </div>
+            <div class="keybutton Digit5">
+              <p id="percentage">%</p>
+              <p id="five">5</p>
+            </div>
+            <div class="keybutton Digit6">
+              <p id="top">^</p>
+              <p id="six">6</p>
+            </div>
+            <div class="keybutton Digit7">
+              <p id="and">&</p>
+              <p id="saven">7</p>
+            </div>
+            <div class="keybutton Digit8">
+              <p id="star">*</p>
+              <p id="egith">8</p>
+            </div>
+            <div class="keybutton Digit9">
+              <p id="nine">(</p>
+              <p id="nine">9</p>
+            </div>
+            <div class="keybutton Digit0">
+              <p id="ten">)</p>
+              <p id="ten">10</p>
+            </div>
+
+            <div class="keybutton Minus">
+              <p id="bs">_</p>
+              <p id="bs">-</p>
+            </div>
+            <div class="keybutton Equal">
+              <p id="bs">+</p>
+              <p id="bs">=</p>
+            </div>
+          </div>
+          <div class="keycol keycol2">
+            <div class="keybutton KeyQ">
+              <p id="bs">Q</p>
+            </div>
+            <div class="keybutton KeyW">
+              <p id="bs">W</p>
+            </div>
+            <div class="keybutton KeyE">
+              <p id="bs">E</p>
+            </div>
+            <div class="keybutton KeyR">
+              <p id="bs">R</p>
+            </div>
+            <div class="keybutton KeyT">
+              <p id="bs">T</p>
+            </div>
+            <div class="keybutton KeyY">
+              <p id="bs">Y</p>
+            </div>
+            <div class="keybutton KeyU">
+              <p id="bs">U</p>
+            </div>
+            <div class="keybutton KeyI">
+              <p id="bs">I</p>
+            </div>
+            <div class="keybutton KeyO">
+              <p id="bs">O</p>
+            </div>
+            <div class="keybutton KeyP">
+              <p id="bs">P</p>
+            </div>
+            <div class="keybutton BracketLeft">
+              <p id="bs">{</p>
+              <p id="bs">[</p>
+            </div>
+            <div class="keybutton BracketRight">
+              <p id="bs">}</p>
+              <p id="bs">]</p>
+            </div>
+          </div>
+          <div class="keycol keycol3">
+            <div class="keybutton KeyA">
+              <p id="bs">A</p>
+            </div>
+            <div class="keybutton KeyS">
+              <p id="bs">S</p>
+            </div>
+            <div class="keybutton KeyD">
+              <p id="bs">D</p>
+            </div>
+            <div class="keybutton KeyF">
+              <p id="bs">F</p>
+            </div>
+            <div class="keybutton KeyG">
+              <p id="bs">G</p>
+            </div>
+            <div class="keybutton KeyH">
+              <p id="bs">H</p>
+            </div>
+            <div class="keybutton KeyJ">
+              <p id="bs">J</p>
+            </div>
+            <div class="keybutton KeyK">
+              <p id="bs">K</p>
+            </div>
+            <div class="keybutton KeyL">
+              <p id="bs">L</p>
+            </div>
+            <div class="keybutton Semicolon">
+              <p id="bs">:</p>
+              <p id="bs">;</p>
+            </div>
+            <div class="keybutton Quote">
+              <p id="bs">"</p>
+              <p id="bs">'</p>
+            </div>
+          </div>
+          <div class="keycol keycol4">
+            <div class="keybutton KeyZ">
+              <p id="bs">Z</p>
+            </div>
+            <div class="keybutton KeyX">
+              <p id="bs">X</p>
+            </div>
+            <div class="keybutton KeyC">
+              <p id="bs">C</p>
+            </div>
+            <div class="keybutton KeyV">
+              <p id="bs">V</p>
+            </div>
+            <div class="keybutton KeyB">
+              <p id="bs">B</p>
+            </div>
+            <div class="keybutton KeyN">
+              <p id="bs">N</p>
+            </div>
+            <div class="keybutton KeyM">
+              <p id="bs">M</p>
+            </div>
+            <div class="keybutton Comma">
+              <p id="bs">,</p>
+            </div>
+            <div class="keybutton Period">
+              <p id="bs">.</p>
+            </div>
+          </div>
+          <div class="keycol">
+            <div class="keybutton Space"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>
