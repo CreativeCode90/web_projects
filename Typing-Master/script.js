@@ -44,7 +44,7 @@ window.addEventListener("keypress", (e) => {
   Mykey.key = keyButtons.includes(e.code);
 
   if (Mykey.key) {
-    document.querySelector(`.${e.code}`).style.backgroundColor = "pink";
+    document.querySelector(`.${e.code}`).style.backgroundColor = Mykey.pink;
 
     if (Mykey.startToggle) {
       let textArray = variables.pera.innerText.split(""); // Convert text to an array
